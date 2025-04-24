@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+h1 {
+    color: #ffcc00;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"], select, input[type="color"] {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Meme Display */
+#memeContainer {
+    position: relative;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+#memeContainer img, #memeContainer video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Meme Text */
+.meme-text {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+#topText { top: 5%; }
+#bottomText { bottom: 5%; }
+
+/* Buttons */
+button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffdb4d;
+}
+
+/* Color Picker */
+.color-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.color-picker label {
+    margin-right: 10px;
+}

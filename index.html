@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔥 Meme Generator 🔥</h1>
+
+        <!-- Upload Section -->
+        <input type="file" id="uploadInput" accept="image/*,video/*">
+
+        <!-- Text Inputs -->
+        <input type="text" id="topTextInput" placeholder="Enter Top Text">
+        <input type="text" id="bottomTextInput" placeholder="Enter Bottom Text">
+
+        <!-- Font Selector -->
+        <label for="fontSelector">Choose Font:</label>
+        <select id="fontSelector">
+            <option value="Impact, sans-serif">Impact</option>
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Comic Sans MS, cursive">Comic Sans MS</option>
+            <option value="'Luckiest Guy', cursive">Luckiest Guy</option>
+        </select>
+
+        <!-- Color Pickers -->
+        <div class="color-picker">
+            <label>🎨 Top Text Color:</label>
+            <input type="color" id="topColorInput">
+        </div>
+        <div class="color-picker">
+            <label>🎨 Bottom Text Color:</label>
+            <input type="color" id="bottomColorInput">
+        </div>
+
+        <!-- Meme Display -->
+        <div id="memeContainer">
+            <img id="memeImage" style="display: none;">
+            <video id="memeVideo" controls style="display: none;"></video>
+
+            <!-- Text Overlays -->
+            <div id="topText" class="meme-text"></div>
+            <div id="bottomText" class="meme-text"></div>
+        </div>
+
+        <!-- Action Buttons -->
+        <button id="downloadBtn" style="display: none;">⬇️ Download Meme</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
