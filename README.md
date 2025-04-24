@@ -26,3 +26,24 @@ To run the Meme Generator locally, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/meme-generator.git
+   Navigate to the project folder:
+2. **Navigate to the Project Folder**
+   
+   ```bash
+   cd meme-generator
+3. **Install Dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+4. **Run the Application**
+   for flask
+   ```bash
+   python app.py
+5. Open the Application in Browser
+Once the server is running, open your browser and go to:
+
+For Flask: http://localhost:5000
+Now, you can start using the Meme Generator locally!
+
+
+
