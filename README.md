@@ -26,7 +26,7 @@ To run the Meme Generator locally, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/meme-generator.git
-   Navigate to the project folder:
+  
 2. **Navigate to the Project Folder**
    
    ```bash
